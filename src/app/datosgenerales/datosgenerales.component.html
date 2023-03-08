@@ -1,0 +1,29 @@
+<ng-container *ngIf="DatoGeneral">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Lugar Nacimiento</th>
+        <th>Sexo</th>
+        <th>Edad</th>
+        <th>Estado Civil</th>
+        <th>Residencia Permanente</th>
+        <th>Número Piso Vivienda</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ DatoGeneral.id_datos_generales }}</td>
+        <td>{{ DatoGeneral.lugar_nacimiento }}</td>
+        <td>{{ DatoGeneral.sexo }}</td>
+        <td>{{ DatoGeneral.edad }}</td>
+        <td>{{ DatoGeneral.estado_civil }}</td>
+        <td>{{ DatoGeneral.residencia_permanente_vivienda }}</td>
+        <td>{{ DatoGeneral.numero_piso_vivienda }}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-container>
+<ng-container *ngIf="!DatoGeneral">
+  <h2>No Data</h2>
+</ng-container>
